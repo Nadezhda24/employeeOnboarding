@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <Gant/>
+    <router-view />
   </div>
 </template>
 
 <script>
 import KnowledgeBase from './components/KnowledgeBase'
 import Gant from "./components/ui/Gant";
+import Profile from "./components/Profile";
 
 export default {
   name: 'App',
   components: {
     Gant,
-    KnowledgeBase
+    KnowledgeBase,
+    Profile
   }
 }
 </script>
