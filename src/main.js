@@ -8,6 +8,9 @@ import VueRouter from "vue-router";
 import Profile from "./components/Profile";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Gant from "./components/ui/Gant";
+import CourseBase from "./components/CourseBase";
+import News from "./components/News";
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
@@ -18,6 +21,21 @@ const routes = [
     path: "",
     component: Profile,
   },
+  {
+    path: "/gant",
+    name: "gant",
+    component: Gant
+  },
+  {
+    path: "/courseBase",
+    name: "courseBase",
+    component: CourseBase
+  },
+  {
+    path: "/news",
+    name: "news",
+    component: News
+  }
 ];
 
 const router = new VueRouter({

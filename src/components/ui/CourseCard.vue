@@ -1,5 +1,5 @@
 <template>
-<div class="container flex-container">
+  <div class="container flex-container">
     <div v-for="course in courses" >
       <b-card
         :title="course.title"
@@ -17,7 +17,7 @@
 
       </b-card>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -27,9 +27,9 @@ export default {
     return{
       courses:[
         {
-        title:"Инструктаж по технике безопасности",
-        description:"Базовый курс по технике безопасности необходимый для каждого сотрудника. Прохождение курса считается успешным только при наборе 90%.\n",
-        pic:"https://murnik.ru/wp-content/uploads/2022/12/1226.jpg"
+          title:"Инструктаж по технике безопасности",
+          description:"Базовый курс по технике безопасности необходимый для каждого сотрудника. Прохождение курса считается успешным только при наборе 90%.\n",
+          pic:"https://murnik.ru/wp-content/uploads/2022/12/1226.jpg"
         },
         {
           title:"Противопожарный инструктаж",

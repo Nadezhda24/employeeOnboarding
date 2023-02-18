@@ -8,7 +8,7 @@
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start "
                         id="menu">
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
+                            <a href="/" class="nav-link align-middle px-0">
                                 <i class="fs-4 bi-house"></i> <span
                                     class="ms-1 d-none d-sm-inline text-white ">Профиль</span>
                             </a>
@@ -19,7 +19,7 @@
                                     class="ms-1 d-none d-sm-inline text-white ">Онбординг</span> </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white ">Дорожная карта</span>
+                                    <a href="/gant" class="nav-link px-0"> <span class="d-none d-sm-inline text-white ">Дорожная карта</span>
                                     </a>
                                 </li>
                                 <li>
@@ -34,8 +34,12 @@
                                     class="ms-1 d-none d-sm-inline text-white ">Прогресс</span></a>
                         </li>
                         <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline  text-white">Новости</span></a>
+                            <a href="/news" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline  text-white">Новости</span>
+                            </a>
+                          <a href="/courseBase" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline  text-white">База курсов</span>
+                          </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                 <li class="w-100">
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Лента новостей</span>

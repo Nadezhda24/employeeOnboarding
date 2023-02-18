@@ -1,9 +1,9 @@
 <template>
-  <div class="row">
-    <div class="col">
+  <div style="display: flex">
+    <div>
       <div class="chart-wrapper" style="background: #6953AF45;">
         <ul class="chart-values">
-          <li v-for="item in title">{{ item }}</li>
+          <li v-for="item in title" style="padding: 0px 5px">{{ item }}</li>
         </ul>
         <ul class="chart-bars">
           <div v-for="item in data">
@@ -12,37 +12,33 @@
         </ul>
       </div>
     </div>
-    <div class="col-3 edit-block" >
+    <div class="edit-block" >
       <div class="input-title" style="text-align: center">Редактирование</div>
       <div class="input-block">
-        <div class="input-title">Название блока</div>
-        <b-form-input class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+        <div class="input-title">Название раздела</div>
+        <b-form-input class="input" v-model="text" placeholder="Введите название раздела"></b-form-input>
       </div>
       <div class="input-block">
-        <div  class="input-title">Название блока</div>
-        <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
-      </div>
-      <div class="input-block">
-        <div  class="input-title">Название блока</div>
-        <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+        <div  class="input-title">Ответсвенный</div>
+        <b-form-input  class="input" v-model="text" placeholder="Введите ФИО"></b-form-input>
       </div>
       <div class="row input-block">
         <div class="col" style="margin-right: 8px">
-          <div  class="input-title">Название блока</div>
-          <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+          <div  class="input-title">Дата начала</div>
+          <b-form-input  class="input" v-model="text" placeholder="Введите дату"></b-form-input>
         </div>
         <div class="col">
-          <div  class="input-title">Название блока</div>
-          <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+          <div  class="input-title">Дата окончания</div>
+          <b-form-input  class="input" v-model="text" placeholder="Введите дату"></b-form-input>
         </div>
       </div>
       <div class="input-block">
         <div  class="input-title">Ссылка для перехода</div>
-        <b-form-input  class="input"  v-model="text" placeholder="Введите ваше имя"></b-form-input>
+        <b-form-input  class="input"  v-model="text" placeholder="Введите ссылку"></b-form-input>
       </div>
       <div class="input-block">
-        <div  class="input-title">Ссылка для перехода</div>
-        <b-form-textarea  class="input" v-model="text" placeholder="add multiple lines"></b-form-textarea>
+        <div  class="input-title">Опсиание</div>
+        <b-form-textarea  class="input" v-model="text" placeholder="Описание блока: здесь вы можете написать какой результат ожидается от прохождения блока "></b-form-textarea>
       </div>
       <div class="row input-block">
         <div class="col card-type" style="background: #D9D9D9" >
@@ -192,7 +188,7 @@ body {
 .chart-wrapper {
   padding: 0 5px;
   margin: 5px ;
-  height: 600px;
+  overflow: scroll;
 }
 
 
@@ -205,6 +201,8 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 0.6rem;
+  max-width: 700px;
+  max-height: 1000px;
 }
 
 .chart-wrapper .chart-values li {
