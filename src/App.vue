@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <KnowledgeBase/>
+    <Gant/>
   </div>
 </template>
 
 <script>
 import KnowledgeBase from './components/KnowledgeBase'
+import Gant from "./components/ui/Gant";
 
 export default {
   name: 'App',
   components: {
+    Gant,
     KnowledgeBase
   }
 }
