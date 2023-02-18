@@ -14,16 +14,16 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle isDisabled">
                                 <i class="fs-4 bi-speedometer2"></i> <span
                                     class="ms-1 d-none d-sm-inline text-white ">Онбординг</span> </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="/gant" class="nav-link px-0"> <span class="d-none d-sm-inline text-white ">Дорожная карта</span>
+                                    <a href="/gant" class="nav-link px-0"> <span class="d-none d-sm-inline text-white">Дорожная карта</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white ">Обучение</span>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white isDisabled">Обучение</span>
                                     </a>
                                 </li>
                             </ul>
@@ -31,47 +31,32 @@
                         <li>
                             <a href="#" class="nav-link px-0 align-middle">
                                 <i class="fs-4 bi-table"></i> <span
-                                    class="ms-1 d-none d-sm-inline text-white ">Прогресс</span></a>
+                                    class="ms-1 d-none d-sm-inline text-white isDisabled">Прогресс</span></a>
                         </li>
                         <li>
-                            <a href="/news" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline  text-white">Новости</span>
-                            </a>
                           <a href="/courseBase" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline  text-white">База курсов</span>
                           </a>
+                          <a href="/news" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Лента новостей</span>
+                            <span class="text-green">1</span>
+                          </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Лента новостей</span>
-                                        <span class="text-green">1</span>
-                                    </a>
-                                </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Уведомления</span>
+                                    <a href="#" class="nav-link px-0 isDisabled"> <span class="d-none d-sm-inline  text-white">Уведомления</span>
                                         <span class="text-green">2</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle isDisabled">
                                 <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline  text-white">База знаний</span>
                             </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Заявки</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Документы</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline  text-white">Документооборот</span></a>
-                                </li>
-                            </ul>
+
                         </li>
                         <li>
                             <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline  text-white">Сотрудники</span>
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline isDisabled text-white">Сотрудники</span>
                             </a>
                         </li>
                     </ul>
@@ -121,4 +106,11 @@ export default {
         background-color: #BEE02A;
         text-align: center;
     }
+
+ .isDisabled {
+   color: currentColor;
+   cursor: not-allowed;
+   opacity: 0.5;
+   text-decoration: none;
+ }
 </style>
