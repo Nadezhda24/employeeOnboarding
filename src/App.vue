@@ -1,7 +1,6 @@
 <template>
-  <div class="row flex-nowrap"  id="app">
-    <Menu/>
-    <CourseBase/>
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
@@ -9,6 +8,7 @@
 
 import KnowledgeBase from './components/KnowledgeBase'
 import Gant from "./components/ui/Gant";
+import Profile from "./components/Profile";
 import CourseBase from './components/CourseBase'
 import Menu from './components/Menu'
 
@@ -17,6 +17,7 @@ export default {
   components: {
     Gant,
     KnowledgeBase,
+    Profile,
     CourseBase,
     Menu
   }
@@ -29,7 +30,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-
+  margin-top: 60px;
 }
 </style>
 

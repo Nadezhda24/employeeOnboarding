@@ -169,6 +169,10 @@
 </template>
 
 <script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 </script>
 
 <style scoped>
