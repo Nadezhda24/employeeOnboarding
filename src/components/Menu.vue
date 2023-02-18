@@ -91,6 +91,7 @@ export default {
 
     .bg-violet {
         background-color: #6953AF;
+      padding-top: 1rem;
     }
 
 
