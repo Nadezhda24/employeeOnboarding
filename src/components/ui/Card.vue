@@ -33,7 +33,6 @@ export default {
   font-weight: bold;
   padding: 10px;
   border-radius: 10px;
-  //background: #BEE02A;
   color: #FFF;
   margin: 5px;
 }

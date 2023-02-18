@@ -1,14 +1,58 @@
 <template>
-  <div class="chart-wrapper" style="background: #6953AF45;">
-    <ul class="chart-values">
-      <li v-for="item in title">{{ item }}</li>
-    </ul>
-    <ul class="chart-bars">
-      <div v-for="item in data">
-        <li :data-duration="item.duration" data-color="#BEE02A" style="color: #FFFFFF">{{item.name}}</li>
+  <div class="row">
+    <div class="col">
+      <div class="chart-wrapper" style="background: #6953AF45;">
+        <ul class="chart-values">
+          <li v-for="item in title">{{ item }}</li>
+        </ul>
+        <ul class="chart-bars">
+          <div v-for="item in data">
+            <li :data-duration="item.duration" data-color="#BEE02A" style="color: #FFFFFF">{{item.name}}</li>
+          </div>
+        </ul>
       </div>
-
-    </ul>
+    </div>
+    <div class="col-3 edit-block" >
+      <div class="input-title" style="text-align: center">Редактирование</div>
+      <div class="input-block">
+        <div class="input-title">Название блока</div>
+        <b-form-input class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+      </div>
+      <div class="input-block">
+        <div  class="input-title">Название блока</div>
+        <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+      </div>
+      <div class="input-block">
+        <div  class="input-title">Название блока</div>
+        <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+      </div>
+      <div class="row input-block">
+        <div class="col" style="margin-right: 8px">
+          <div  class="input-title">Название блока</div>
+          <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+        </div>
+        <div class="col">
+          <div  class="input-title">Название блока</div>
+          <b-form-input  class="input" v-model="text" placeholder="Введите ваше имя"></b-form-input>
+        </div>
+      </div>
+      <div class="input-block">
+        <div  class="input-title">Ссылка для перехода</div>
+        <b-form-input  class="input"  v-model="text" placeholder="Введите ваше имя"></b-form-input>
+      </div>
+      <div class="input-block">
+        <div  class="input-title">Ссылка для перехода</div>
+        <b-form-textarea  class="input" v-model="text" placeholder="add multiple lines"></b-form-textarea>
+      </div>
+      <div class="row input-block">
+        <div class="col card-type" style="background: #D9D9D9" >
+          Отмена
+        </div>
+        <div class="col card-type" style="background: #BEE02A" >
+          Сохранить
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -58,6 +102,7 @@ export default {
   name: "Gant",
   data () {
     return {
+      text: '',
       title: [
         "12.02.2023",
         "13.02.2023",
@@ -84,7 +129,7 @@ export default {
         {duration: "13.02.2023-16.02.2023" , name: "Вводная встреча с ментором"},
         {duration: "17.02.2023-19.02.2023" , name: "Курс по основам корпаративной культуры"},
         {duration: "15.02.2023-22.02.2023" , name: "Курс про цели и задачи компании"},
-        {duration: "27.02.2023-02.03.2023" , name: "Встреча с командой подразделения"},
+        {duration: "26.02.2023-02.03.2023" , name: "Встреча с командой подразделения"},
 
       ]
     }
@@ -93,6 +138,27 @@ export default {
 </script>
 
 <style scoped>
+.edit-block{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #6953AF;
+  border-radius: 10px;
+}
+.input-block{
+  margin-top: 20px ;
+}
+
+.input{
+  border-color: #6953AF ;
+  padding: 8px;
+
+}
+
+.input-title{
+  color: #010101;
+  font-weight: bold;
+}
+
 /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
@@ -126,7 +192,7 @@ body {
 .chart-wrapper {
   padding: 0 5px;
   margin: 5px ;
-  height: 400px;
+  height: 600px;
 }
 
 
@@ -146,6 +212,15 @@ body {
   text-align: center;
 }
 
+.card-type{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  color: #FFF;
+  margin: 5px;
+}
+
 .chart-wrapper .chart-values li:not(:last-child) {
   position: relative;
 }
@@ -154,7 +229,7 @@ body {
   content: '';
   position: absolute;
   right: 0;
-  height: 400px;
+  height: 600px;
   border-right: 1px dashed #6953AF;
 }
 
