@@ -64,10 +64,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 <h5>Макеты интерфейса:</h5>
 https://www.figma.com/file/tDxV42QhMsiAHuC0r180ok/%D0%9E%D0%BD%D0%B1%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B3?node-id=3%3A4&t=qO5YPDIcK9zFcCNN-0
 
-<h5>Схема базы данны</h5>
-Схема БД
+<h5>Схема базы данны:</h5>
 
-<p>или</p> 
 https://drive.google.com/drive/folders/1-f3UnnnkiVbI410CKZOIk15UKtYRusO-?usp=share_link
 
 
